@@ -4,8 +4,11 @@
 # - 4 -> [1, 2, 6, 24]
 # - 6 -> [1, 2, 6, 24, 120, 720]
 
+
+n = int(input ('Введите длину списка '))
+sum = 1
 num_list = []
-n = int (input ('Введите длину списка '))
-for k in range (1, n+1):
-    num_list.append (k*3+1)
+for i in range(n):
+    sum *= i + 1
+    num_list.append (sum)
 print (num_list)

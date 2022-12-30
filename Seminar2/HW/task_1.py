@@ -6,9 +6,13 @@
 # - 0.67 -> 13
 # - 198.45 -> 27
 
-n = float(input("Введите число: "))
+n = input("Введите число: ")
 sum = 0
-while(n > 0):
+power = len(n) - 2
+n = float(n)
+n *= int(10 ** power)
+
+while n :
     sum = n % 10 + sum
-    n = int(n / 10)
+    n //= 10
 print (int(sum))
